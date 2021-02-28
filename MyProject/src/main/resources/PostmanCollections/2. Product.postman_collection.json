@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "2872a212-301e-4a76-b210-b1f5a465dc52",
+		"name": "2. Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post product 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product?product=productName&description=description&article=article&colour=colour&size=size&weight=0.777&categoryId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "productName"
+						},
+						{
+							"key": "description",
+							"value": "description"
+						},
+						{
+							"key": "article",
+							"value": "article"
+						},
+						{
+							"key": "colour",
+							"value": "colour"
+						},
+						{
+							"key": "size",
+							"value": "size"
+						},
+						{
+							"key": "weight",
+							"value": "0.777"
+						},
+						{
+							"key": "categoryId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get id product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/1/?product=productName1&description=description1&article=article1&colour=colour1&size=size&weight=0.123&categoryId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "productName1"
+						},
+						{
+							"key": "description",
+							"value": "description1"
+						},
+						{
+							"key": "article",
+							"value": "article1"
+						},
+						{
+							"key": "colour",
+							"value": "colour1"
+						},
+						{
+							"key": "size",
+							"value": "size"
+						},
+						{
+							"key": "weight",
+							"value": "0.123"
+						},
+						{
+							"key": "categoryId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post product 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product?product=productName2&description=description2&article=article2&colour=colour2&size=size2&weight=0.321&categoryId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "productName2"
+						},
+						{
+							"key": "description",
+							"value": "description2"
+						},
+						{
+							"key": "article",
+							"value": "article2"
+						},
+						{
+							"key": "colour",
+							"value": "colour2"
+						},
+						{
+							"key": "size",
+							"value": "size2"
+						},
+						{
+							"key": "weight",
+							"value": "0.321"
+						},
+						{
+							"key": "categoryId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/product/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

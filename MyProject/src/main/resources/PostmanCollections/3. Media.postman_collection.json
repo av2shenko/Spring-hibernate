@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "c5322855-adfa-4c7e-bbda-fdf27bcb3810",
+		"name": "3. Media",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post link media",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/media/link?mediaLink=https://spring.io/guides/gs/rest-service/&mediaName=rest-service&productId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media",
+						"link"
+					],
+					"query": [
+						{
+							"key": "mediaLink",
+							"value": "https://spring.io/guides/gs/rest-service/"
+						},
+						{
+							"key": "mediaName",
+							"value": "rest-service"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/media",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get id media",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/media/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put link media",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/media/link/1?mediaLink=mediaLink&mediaName=mediaName&productId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media",
+						"link",
+						"1"
+					],
+					"query": [
+						{
+							"key": "mediaLink",
+							"value": "mediaLink"
+						},
+						{
+							"key": "mediaName",
+							"value": "mediaName"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post data media",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mediaData",
+							"type": "file",
+							"src": "/C:/Users/Admin/Desktop/OG-Spring.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/media/upload/?mediaName=mediaName&productId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media",
+						"upload",
+						""
+					],
+					"query": [
+						{
+							"key": "mediaName",
+							"value": "mediaName"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put data media",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mediaData",
+							"type": "file",
+							"src": "/C:/Users/Admin/Desktop/er_diagram_homework3.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/media/upload/1?mediaLink=https://spring.io/guides/gs/rest-service/&mediaName=rest-service&productId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media",
+						"upload",
+						"1"
+					],
+					"query": [
+						{
+							"key": "mediaLink",
+							"value": "https://spring.io/guides/gs/rest-service/"
+						},
+						{
+							"key": "mediaName",
+							"value": "rest-service"
+						},
+						{
+							"key": "productId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del media",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/media/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"media",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "57185eb7-6432-4680-b6a4-84392f514de3",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d306621f-94f0-4c8a-89af-60e01d82e4ad",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
